@@ -28,7 +28,7 @@ public class LoginAfterTest {
     void setUp() {
         playwright = Playwright.create();
         browser = playwright.chromium().launch(new BrowserType.LaunchOptions()
-                .setHeadless(false));
+                .setHeadless(true));
         page = browser.newPage();
         loginPage = new LoginPage(page);
     }
